@@ -1,0 +1,13 @@
+Ensure your system has build-essential Debian package installed, and automake too.
+
+Within the rft-filter directory issue these commands:
+
+./configure
+make all
+make install
+
+
+
+
+
+

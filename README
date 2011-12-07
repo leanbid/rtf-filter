@@ -1,0 +1,25 @@
+// Copyright PS Computer Services Ltd 2003-2010
+// Simon Capstick
+// Original code 2003/03/17
+// Adapted 2010/11/30
+
+README (2011/01/05)
+
+Ensure boost development libraries are installed.  E.g. on Debian...
+
+aptitude install libboost-program-options-dev
+aptitude install libboost-filesystem-dev
+
+And the C++ toolchain:
+
+aptitude install build-essential
+
+Then compile the code:
+
+g++ main.cpp rtf.cpp ccontrolword.cpp aux.cpp -lboost_filesystem -lboost_program_options -o rtf-filter
+
+Then ensure that resulting program is executable:
+
+chmod +x rtf-filter
+
+
