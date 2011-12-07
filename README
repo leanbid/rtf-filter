@@ -16,6 +16,14 @@ Then compile the code:
 ./configure make all
 sudo make install
 
+== Bug reports
+
+If you discover a problem with rtf-filter, we would like to know about it.
+
+Our Issues Tracker is available here: 
+
+https://pscomputer.lighthouseapp.com/projects/87526-rtf-filter
+
 == License
 
 COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
