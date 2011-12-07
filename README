@@ -1,9 +1,6 @@
-// Copyright PS Computer Services Ltd 2003-2010
-// Simon Capstick
-// Original code 2003/03/17
-// Adapted 2010/11/30
 
-README (2011/01/05)
+
+== Installation
 
 Ensure boost development libraries are installed.  E.g. on Debian...
 
@@ -22,4 +19,7 @@ Then ensure that resulting program is executable:
 
 chmod +x rtf-filter
 
+== License
 
+COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
+Copyright PS Computer Services Ltd 2003-2011
