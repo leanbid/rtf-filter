@@ -4,7 +4,13 @@ Within the rft-filter directory issue these commands:
 
 ./configure
 make all
-make install
+sudo make install
+
+The program will be installed as rtffilter.
+
+
+
+
 
 
 

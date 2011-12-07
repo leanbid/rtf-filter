@@ -13,11 +13,8 @@ aptitude install build-essential
 
 Then compile the code:
 
-g++ main.cpp rtf.cpp ccontrolword.cpp aux.cpp -lboost_filesystem -lboost_program_options -o rtf-filter
-
-Then ensure that resulting program is executable:
-
-chmod +x rtf-filter
+./configure make all
+sudo make install
 
 == License
 

@@ -6,5 +6,5 @@ rtffilter_LDFLAGS = -lboost_filesystem -lboost_program_options -ldl
 
 rtffilter_CXXFLAGS = -O2 
 
-noinst_HEADERS = aux.h rtf.h
+noinst_HEADERS = aux.h rtf.h ccontrolword.h
 
