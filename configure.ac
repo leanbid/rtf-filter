@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.67])
-AC_INIT([rtf-filter], [2.11], [simon@pscomputer.co.uk])
+AC_INIT([rtf-filter], [2.12], [simon@pscomputer.co.uk])
 AC_CONFIG_SRCDIR([src/rtf.cpp])
 AM_INIT_AUTOMAKE
 AC_CONFIG_HEADERS([config.h])

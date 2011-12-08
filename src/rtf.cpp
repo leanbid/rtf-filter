@@ -19,7 +19,7 @@
 #include "boost/filesystem/convenience.hpp"
 
 
-void	convert( std::istream &is, std::ostream &os, unsigned long maxTextBytes, bool allowTags ){
+void	convert( std::istream &is, std::ostream &os, const unsigned long maxTextBytes, const bool allowTags, const bool verbose ){
 	// maxTextBytes is the max number of output bytes allowed, 0 = infinite
 	char	c = 0;
 	long	lBraceLevel = 0;
@@ -28,6 +28,14 @@ void	convert( std::istream &is, std::ostream &os, unsigned long maxTextBytes, bo
 	bool	bSkipGroup = true;
 	unsigned long byteCnt = 0;
 	CControlWord cw;
+	if( verbose ){
+		if( allowTags ){
+			std::cout << "Including angle brackets in output.  ";
+		}
+		else {
+			std::cout << "Excluding angle brackets in output.  ";
+		}		
+    }    	
 	// first fetch first byte to check for RTF format
 	is.get(c); 
 	if( c!='{' ){
@@ -126,7 +134,7 @@ void	convert( std::istream &is, std::ostream &os, unsigned long maxTextBytes, bo
 			}
 			break;
 		case '>' :
-			if( allowTags=true ){
+			if( allowTags==true ){
 				os << ">";
 				byteCnt++;
 			}

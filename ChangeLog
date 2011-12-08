@@ -1,0 +1,18 @@
+== 2.1.2 
+
+* bug fix
+  * Fixed problem with -allowTags option which was always on.
+
+== 2.1.1
+
+* enhancements
+  * Install via make
+
+* deprecation
+  * rtf-filter should now be called with the command rtffilter instead of the command rtf-filter
+
+== 2.1.0
+
+* license
+  * rtf-filter released as open source under COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
+

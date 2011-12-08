@@ -14,12 +14,8 @@
 #include "boost/filesystem/convenience.hpp"
 
 // These convert a file stream of a Rich Text Format document to plain text or HTML
-void	convert( std::istream &is, std::ostream &os, unsigned long maxTextBytes=0, bool allowTags=false);
+void	convert( std::istream &is, std::ostream &os, const unsigned long maxTextBytes=0, const bool allowTags=false, const bool verbose=false);
 
-//void    getOptions( int argc, char *argv[], bool &verbose, bool &quiet, bool &toStdOut,
- //                   boost::filesystem::path &sourceFile, boost::filesystem::path &destinationFile, bool &allowTags);
-
-//int	CharToHex( unsigned char c );
 
 
 #endif

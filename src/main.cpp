@@ -40,14 +40,30 @@ int main(int argc, char *argv[]){
     fs::ifstream is( sourceFile );
     // Output plain text...
     if( toStdOut ){
-      convert( is, std::cout, 0, allowTags );
+      if( verbose ){
+		if( allowTags ){
+			std::cout << "Including angle brackets in output.  ";
+		}
+		else {
+			std::cout << "Excluding angle brackets in output.  ";
+		}		
+        std::cout << "Outputting to console." << std::endl;
+      }    
+    
+      convert( is, std::cout, 0, allowTags, verbose );
     }
     else {
       if( verbose ){
+		if( allowTags ){
+			std::cout << "Including angle brackets in output.  ";
+		}
+		else {
+			std::cout << "Excluding angle brackets in output.  ";
+		}		
         std::cout << "Outputting plaintext to file: " << destinationFile.file_string() << std::endl;
       }
       fs::ofstream os(destinationFile);
-      convert( is, os, 0, allowTags );
+      convert( is, os, 0, allowTags, verbose );
     }
 
     return 0;                                                                                             
